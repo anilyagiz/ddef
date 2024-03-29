@@ -1,0 +1,19 @@
+.site-footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1rem;
+    mix-blend-mode: difference;
+
+    @media (min-width: 768px) {
+        padding: 3rem;
+    }
+
+
+    a {
+        display: inline-block;
+    }
+
+}

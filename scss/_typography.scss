@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+small {
+    font-size: 1rem;
+}
+
+
+.title-lg {
+    font-size: 24vw;
+
+    @media (min-width: 768px) {
+        font-size: 18vw;
+    }
+}
+
+.title-md {
+    font-size: 18vw;
+
+    @media (min-width: 768px) {
+        font-size: 14vw;
+    }
+}
+
+
+.title-sm {
+    font-size: 12vw;
+
+    @media (min-width: 768px) {
+        font-size: 6vw;
+    }
+}
+
+.lead {
+    font-size: 4rem;
+}
+
+.is-bold {
+    font-weight: bold;
+}
+
+.is-light {
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-split > div, .intro-title > div {
+    position: relative;
+    overflow: hidden;
+}
+
+.hollow-text {
+    color: #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}

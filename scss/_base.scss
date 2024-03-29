@@ -1,0 +1,67 @@
+html {
+	position: relative;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	line-height: 1.4;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body{
+    background: #191919;
+    --cursor-fill: #00ffcb;
+    --cursor-text: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: crosshair;
+}
+
+canvas{
+	display: block
+}
+
+.overlay {
+	background-color: #191919;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+
+	path {
+		fill: #24ebc0;
+	}
+}
+
+.cursor {
+	display: none;
+}
+
+@media (any-pointer:fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+		z-index: 10000;
+		mix-blend-mode: exclusion;
+	}
+
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		border: 1px solid var(--cursor-fill);
+	}
+
+	.no-js .cursor {
+		display: none;
+	}
+
+}
